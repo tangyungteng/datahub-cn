@@ -1,0 +1,56 @@
+name: github actions format
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - ".github/**/*.yml"
+      - ".github/**/*.yaml"
+  pull_request:
+    branches:
+      - "**"
+    paths:
+      - ".github/**/*.yml"
+      - ".github/**/*.yaml"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  github_actions_format_check:
+    name: github_actions_format_check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: acryldata/sane-checkout-action@186e92cc5948a9c3e1cc7a96eaff9f776f3fc8e3 # v7
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+        with:
+          python-version: "3.10"
+      - name: run prettier --check
+        run: |-
+          ./gradlew :datahub-web-react:githubActionsPrettierCheck
+
+  validate_post_workflow_list:
+    name: validate_post_workflow_list
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: acryldata/sane-checkout-action@186e92cc5948a9c3e1cc7a96eaff9f776f3fc8e3 # v7
+        with:
+          checkout-head-only: false
+
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+        with:
+          python-version: "3.10"
+      - name: Install uv
+        uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5
+        with:
+          enable-cache: true
+      - name: Install pyyaml
+        run: uv pip install pyyaml --system
+      - name: Validate post-workflow-actions.yml workflow list
+        run: python .github/scripts/validate_post_workflow_list.py
+      - name: Write step summary
+        if: always()
+        run: cat post-workflow-validation-summary.md >> "$GITHUB_STEP_SUMMARY"

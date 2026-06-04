@@ -1,0 +1,27 @@
+{
+    "bar": {
+        "placeholder": "搜索表、仪表板、人员等",
+        "filter_by": "筛选条件",
+        "explore_all": "浏览全部"
+    },
+    "empty": {
+        "no_results": "未找到相关结果",
+        "no_results_query": "未找到 \"{{query}}\" 的相关结果",
+        "try": "尝试",
+        "try_refine": "尝试action",
+        "clearing_all_filters": "清除所有筛选条件",
+        "clearing_selected_view": "清除选中的视图",
+        "clearing_all_filters_and_view": "清除所有筛选条件和选中的视图",
+        "or_searching_for": "或搜索",
+        "did_you_mean": "您是不是想找",
+        "explore_all": "浏览全部"
+    },
+    "filters": {
+        "platform": "平台",
+        "entity_type": "实体类型",
+        "tags": "标签",
+        "glossary_terms": "业务术语",
+        "domain": "数据域",
+        "owners": "负责人"
+    }
+}

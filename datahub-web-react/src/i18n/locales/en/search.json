@@ -1,0 +1,27 @@
+{
+    "bar": {
+        "placeholder": "Search for datasets, dashboards, charts, and more...",
+        "filter_by": "Filter by",
+        "explore_all": "Explore all"
+    },
+    "empty": {
+        "no_results": "No results found for",
+        "no_results_query": "No results found for \"{{query}}\"",
+        "try": "Try",
+        "try_refine": "Try action",
+        "clearing_all_filters": "clearing all filters",
+        "clearing_selected_view": "clearing the selected view",
+        "clearing_all_filters_and_view": "clearing all filters and selected view",
+        "or_searching_for": "or searching for",
+        "did_you_mean": "Did you mean",
+        "explore_all": "Explore all"
+    },
+    "filters": {
+        "platform": "Platform",
+        "entity_type": "Entity Type",
+        "tags": "Tags",
+        "glossary_terms": "Glossary Terms",
+        "domain": "Domain",
+        "owners": "Owners"
+    }
+}

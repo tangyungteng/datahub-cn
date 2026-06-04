@@ -1,0 +1,17 @@
+{
+    "title": "Settings",
+    "tabs": {
+        "access_tokens": "Access Tokens",
+        "policies": "Policies",
+        "roles": "Roles",
+        "users_groups": "Users & Groups",
+        "preferences": "Preferences",
+        "home_page": "Home Page"
+    },
+    "access_tokens": {
+        "generate": "Generate New Token",
+        "name": "Token Name",
+        "description": "Description",
+        "expires": "Expires In"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "title": "设置",
+    "tabs": {
+        "access_tokens": "访问令牌",
+        "policies": "权限策略",
+        "roles": "角色管理",
+        "users_groups": "用户与分组",
+        "preferences": "偏好设置",
+        "home_page": "首页配置"
+    },
+    "access_tokens": {
+        "generate": "生成新令牌",
+        "name": "令牌名称",
+        "description": "描述",
+        "expires": "过期时间"
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "actions": {
+        "mark_deprecated": "标记为已弃用",
+        "mark_undeprecated": "取消弃用标记",
+        "add_term": "添加术语",
+        "add_term_group": "添加术语分组",
+        "move": "移动",
+        "delete": "删除",
+        "copy_url": "复制链接",
+        "copy_urn": "复制 URN"
+    },
+    "tabs": {
+        "documentation": "文档",
+        "properties": "属性",
+        "schema": "结构",
+        "lineage": "血缘",
+        "queries": "查询",
+        "stats": "统计",
+        "incidents": "事件",
+        "runs": "运行记录"
+    },
+    "empty": {
+        "documentation_title": "暂无文档",
+        "documentation_desc": "通过添加文档和链接来分享您的知识。",
+        "tags_title": "暂无标签",
+        "tags_desc": "为实体添加标签以提高可发现性和资产分组。",
+        "terms_title": "暂无业务术语",
+        "terms_desc": "为此实体添加业务术语进行分类。",
+        "owners_title": "暂无负责人",
+        "owners_desc": "为此实体添加负责人以指定责任人。",
+        "properties_title": "暂无属性",
+        "properties_desc": "尚未为此实体添加自定义属性。",
+        "queries_title": "暂无查询",
+        "queries_desc": "尚未记录此实体的查询。",
+        "domain_title": "未设置数据域",
+        "domain_desc": "将相关数据资产分组到数据域中来组织数据生态系统。",
+        "data_product_title": "暂无数据产品",
+        "data_product_desc": "创建数据产品来捆绑相关数据资产。",
+        "application_title": "暂无应用",
+        "application_desc": "将实体与应用关联以跟踪所有权和生命周期。",
+        "structured_props_title": "未设置值",
+        "contains_title": "空",
+        "contains_desc": "此实体不包含其他实体。",
+        "inherits_title": "无继承属性",
+        "inherits_desc": "此实体未从其他实体继承。",
+        "contained_by_title": "未被包含",
+        "contained_by_desc": "此实体未被其他实体包含。",
+        "inherited_by_title": "未被继承",
+        "inherited_by_desc": "没有实体从此实体继承。",
+        "business_attributes_title": "暂无业务属性",
+        "business_attributes_desc": "添加业务属性以提供业务上下文。",
+        "ml_model_title": "暂无 ML 模型",
+        "ml_model_desc": "没有 ML 模型与此实体关联。"
+    },
+    "summary_property": {
+        "created": "创建时间",
+        "last_modified": "最后修改",
+        "domain": "数据域",
+        "glossary_terms": "业务术语",
+        "owners": "负责人",
+        "tags": "标签",
+        "status": "状态",
+        "type": "类型"
+    },
+    "document": {
+        "type_none": "无",
+        "status_published": "已发布",
+        "status_draft": "草稿"
+    },
+    "sidebar_tabs": {
+        "summary": "概览",
+        "props": "属性",
+        "columns": "列",
+        "lineage": "血缘",
+        "structured_properties": "结构化属性"
+    },
+    "sidebar": {
+        "documentation": "文档",
+        "tags": "标签",
+        "terms": "术语",
+        "owners": "负责人",
+        "technical_owners": "技术负责人",
+        "domain": "数据域",
+        "data_product": "数据产品",
+        "data_products": "数据产品",
+        "applications": "应用",
+        "properties": "属性",
+        "summary": "概览"
+    }
+}

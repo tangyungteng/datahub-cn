@@ -1,0 +1,53 @@
+name: code check
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "metadata-io/**"
+      - "datahub-web-react/**"
+      - "metadata-service/war/src/main/resources/boot/policies.json"
+      - "**/build.gradle"
+      - "**/build.gradle.kts"
+      - "**/gradle.lockfile"
+      - ".github/workflows/code-checks.yml"
+      - ".github/scripts/check_*.py"
+  pull_request:
+    branches:
+      - "**"
+    paths:
+      - "metadata-io/**"
+      - "datahub-web-react/**"
+      - "metadata-service/war/src/main/resources/boot/policies.json"
+      - "**/build.gradle"
+      - "**/build.gradle.kts"
+      - "**/gradle.lockfile"
+      - ".github/workflows/code-checks.yml"
+      - ".github/scripts/check_*.py"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  code_check:
+    strategy:
+      fail-fast: false
+      matrix:
+        command:
+          [
+            "check_event_type.py",
+            "check_policies.py",
+            "check_gradle_lockfiles.py",
+          ]
+    name: run code checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: acryldata/sane-checkout-action@186e92cc5948a9c3e1cc7a96eaff9f776f3fc8e3 # v7
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+        with:
+          python-version: "3.10"
+      - name: run check ${{ matrix.command }}
+        run: |-
+          python .github/scripts/${{ matrix.command }}

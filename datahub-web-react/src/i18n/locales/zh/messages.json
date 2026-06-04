@@ -1,0 +1,27 @@
+{
+    "success": {
+        "copied_url": "已复制链接！",
+        "copied_urn": "已复制 URN！",
+        "deprecation_updated": "弃用状态已更新",
+        "entity_deleted": "删除成功！",
+        "entity_updated": "更新成功！",
+        "saved": "保存成功！"
+    },
+    "error": {
+        "failed_update": "更新失败：error",
+        "failed_delete": "删除失败：error",
+        "failed_deprecation": "弃用状态更新失败：{{error}}",
+        "failed_load": "加载失败：error",
+        "generic": "发生了意外错误"
+    },
+    "confirm": {
+        "delete_title": "确认删除",
+        "delete_content": "确定要删除吗？",
+        "deprecate_title": "确认弃用"
+    },
+    "loading": {
+        "updating": "更新中...",
+        "deleting": "删除中...",
+        "loading": "加载中..."
+    }
+}

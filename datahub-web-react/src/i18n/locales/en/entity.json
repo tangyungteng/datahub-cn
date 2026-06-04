@@ -1,0 +1,90 @@
+{
+    "actions": {
+        "mark_deprecated": "Mark as deprecated",
+        "mark_undeprecated": "Mark as un-deprecated",
+        "add_term": "Add Term",
+        "add_term_group": "Add Term Group",
+        "move": "Move",
+        "delete": "Delete",
+        "copy_url": "Copy Url",
+        "copy_urn": "Copy Urn"
+    },
+    "tabs": {
+        "documentation": "Documentation",
+        "properties": "Properties",
+        "schema": "Schema",
+        "lineage": "Lineage",
+        "queries": "Queries",
+        "stats": "Stats",
+        "incidents": "Incidents",
+        "runs": "Runs"
+    },
+    "empty": {
+        "documentation_title": "No documentation yet",
+        "documentation_desc": "Share your knowledge by adding documentation and links to this entity.",
+        "tags_title": "No tags added yet",
+        "tags_desc": "Tag entities to help make them more discoverable and group assets.",
+        "terms_title": "No glossary terms added yet",
+        "terms_desc": "Add glossary terms to this entity to classify it.",
+        "owners_title": "No owners added yet",
+        "owners_desc": "Add owners to this entity to designate who is responsible for it.",
+        "properties_title": "No properties",
+        "properties_desc": "No custom properties have been added to this entity.",
+        "queries_title": "No queries yet",
+        "queries_desc": "No queries have been recorded for this entity.",
+        "domain_title": "No domain set",
+        "domain_desc": "Group related data assets into a domain to organize your data ecosystem.",
+        "data_product_title": "No data products yet",
+        "data_product_desc": "Create a data product to bundle related data assets.",
+        "application_title": "No application yet",
+        "application_desc": "Associate entities with applications to track ownership and lifecycle.",
+        "structured_props_title": "No value set",
+        "contains_title": "Empty",
+        "contains_desc": "This entity does not contain any other entities.",
+        "inherits_title": "No inherited properties",
+        "inherits_desc": "This entity does not inherit from any other entities.",
+        "contained_by_title": "Not contained",
+        "contained_by_desc": "This entity is not contained by any other entity.",
+        "inherited_by_title": "Not inherited",
+        "inherited_by_desc": "No entities inherit from this entity.",
+        "business_attributes_title": "No business attributes",
+        "business_attributes_desc": "Add business attributes to provide business context.",
+        "ml_model_title": "No ML models",
+        "ml_model_desc": "No ML models are associated with this entity."
+    },
+    "summary_property": {
+        "created": "Created",
+        "last_modified": "Last Modified",
+        "domain": "Domain",
+        "glossary_terms": "Glossary Terms",
+        "owners": "Owners",
+        "tags": "Tags",
+        "status": "Status",
+        "type": "Type"
+    },
+    "document": {
+        "type_none": "None",
+        "status_published": "Published",
+        "status_draft": "Draft"
+    },
+    "sidebar_tabs": {
+        "summary": "Summary",
+        "props": "Props",
+        "columns": "Columns",
+        "lineage": "Lineage",
+        "structured_properties": "Structured Properties"
+    },
+    "sidebar": {
+        "documentation": "Documentation",
+        "tags": "Tags",
+        "terms": "Terms",
+        "owners": "Owners",
+        "technical_owners": "Technical Owners",
+        "domain": "Domain",
+        "data_product": "Data Product",
+        "data_products": "Data Products",
+        "applications": "Applications",
+        "properties": "Properties",
+        "summary": "Summary"
+    }
+}
